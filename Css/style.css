@@ -1,0 +1,182 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,400;0,500;0,600;1,100;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Fira Sans', sans-serif ;
+    list-style: none;
+}
+:root{
+    --primary-color: #BC9667;
+    --secund-color: #F1F1f1;
+    --terc-color: #1b1b1b;
+    --text-color: #fff;
+
+}
+header{
+    padding: 30px 10%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    max-width: 100px;
+    min-width: 30px;
+}
+.menu ul{
+    display: flex;
+    gap: 2rem;
+}
+.menu a{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all .42s ease-in ;
+}
+.menu a:hover{
+    color: var(--primary-color);
+
+}
+#menu-icon{
+    display: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+header.sticky{
+    background-color: var(--terc-color);
+}
+/*===============SECTION MAIN====================*/
+section{
+    padding: 5% 10%;
+}
+
+.main{
+    background-image: url("../images/back.jpg");
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;   
+}
+.main h1{
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.main p{
+    color: var(--secund-color);
+    text-align: justify;
+    width:568px ;
+    margin-bottom: 2rem;
+}
+.main .btnShop{
+    padding: .625rem;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    transition: all .42s ease-in;
+    background-color: var(--primary-color);
+}
+.main .btnShop:hover{
+    background-color: transparent;
+}
+.main-img img{
+    max-width: 100%;
+    min-width: 200px;
+    width: 650px;
+}
+
+/*==================Section About=================*/
+#about{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(600px, auto));
+   align-items:self-start; 
+    gap: 2rem;
+    background-color: var(--secund-color);
+}
+.about-img img{
+    max-width: 700px;
+    min-width: 200px;
+    width: 600px;
+    border-radius: 25px;
+
+}
+.about-title h2{
+    margin-bottom: .8rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.about-text p{
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.btnLeranMore{
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+/*=================SECTION PRODUCTS========================*/
+#products{
+    background-color: var(--secund-color);
+}
+.products-title h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.products-deck{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.card img{
+    width: 320px;
+    max-width: 100%;
+    min-width: 200px;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.card{
+    padding: 20px;
+    height: auto;
+    width: 300px;
+}
+.products-text h5{
+    position: relative;
+    top: -275px;
+    left: -30px;
+    background-color: #27b737;
+    padding: 5px 10px;
+    width: 75px;
+    text-align: center;
+    color: var(--text-color);
+    transform:rotate(-32deg);
+    border-radius: 2px ;
+}
+.price{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-top: .8rem;
+    text-transform: capitalize;
+}
+.price .desc{
+    text-decoration: line-through;
+    
+}

@@ -1,0 +1,48 @@
+@media(max-width:750px){
+    #menu-icon{
+        display: block;
+    }
+    .nav-menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #313030;
+        padding: 120px 30px;
+        align-items: center;
+        transition: all .42s;
+    }
+    .nav-menu a{
+        display: block;
+        margin: 10px 0;
+    }
+    .nav-menu.open{
+        right: 0;
+    }
+}
+/*=================================MOBILE===================*/
+@media(max-width:415px){
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main h1{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .main p{
+        width: 300px;
+    }
+   
+    .about-img img{
+        width: 350px;
+    }
+    .about-text{
+        width: 350px;
+    }
+    .about-text p{
+        width: 350px;
+    }
+}
