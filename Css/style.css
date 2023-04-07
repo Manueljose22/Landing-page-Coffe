@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family:'Fira Sans', sans-serif ;
     list-style: none;
+    scroll-behavior: smooth;
 }
 :root{
     --primary-color: #BC9667;
@@ -16,7 +17,7 @@
 
 }
 header{
-    padding: 30px 10%;
+    padding: 20px 10%;
     top: 0;
     right: 0;
     display: flex;
@@ -99,17 +100,22 @@ section{
 /*==================Section About=================*/
 #about{
    display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(600px, auto));
-   align-items:self-start; 
-    gap: 2rem;
-    background-color: var(--secund-color);
+   grid-template-columns: repeat(auto-fit,minmax(500px, auto));
+   align-items:center; 
+   gap: 2rem;
+    
 }
-.about-img img{
+.about-img{
     max-width: 700px;
     min-width: 200px;
-    width: 600px;
+    width: 500px;
+    
+}
+.about-img img{
+    max-width: inherit;
+    min-width: inherit;
+    width: inherit;
     border-radius: 25px;
-
 }
 .about-title h2{
     margin-bottom: .8rem;
@@ -129,9 +135,7 @@ section{
 }
 
 /*=================SECTION PRODUCTS========================*/
-#products{
-    background-color: var(--secund-color);
-}
+
 .products-title h2{
     text-align: center;
     font-weight: 700;
@@ -147,7 +151,7 @@ section{
 .card img{
     width: 320px;
     max-width: 100%;
-    min-width: 200px;
+    min-width: 150px;
 }
 .card img:hover{
     transform: scale(1.1);
@@ -156,6 +160,9 @@ section{
     padding: 20px;
     height: auto;
     width: 300px;
+    background-color: var(--secund-color);
+    border-radius: 2px;
+    box-shadow: 0 0 2px var(--terc-color);
 }
 .products-text h5{
     position: relative;
@@ -184,27 +191,120 @@ section{
 /*SECTION CLIENTES*/
 .client-comment{
     display: flex;
+    align-items: center;
     gap: 2rem;
     margin: 0 auto;
-    width: 674.5px;
+    width: 990px;
+
 }
 
 .row{
-    width: 500px;
+    max-width: 100%;
+    min-width: 200px;
+    width: 300px;
+    height: 350px;
     text-align: center;
     line-height: 1.4rem;
-    background-color: #d1d1d1;
-    padding: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 2px #252525;
+    border-radius: 25px;
+}
+.overlay{
+    position: relative;
+    top: 0px;
+    left: 125px;
+    background-color: #BC9667;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before, .overlay::after{
+    content: "";
+    position: absolute;
+    right: -25px;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #BC9667;
+    border-radius: 25px 0 25px 25px;
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #f1f1f1;
+
+}
+
+
+.row-img{
+    width: inherit;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 25px 25px 0 25px;
+
 }
 .row img{
     border-radius: 50%;
+    border: 4px solid #fff;
 }
-.row h4{
+.clients-title h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.content {
+    padding: 8px; 
+ }
+ .content p{
+     margin-bottom: 20px;
+ }
+.content h4{
     margin: 10px 0 ;
     color: #252525;
+}
+.content .BtnViewMore{
+    padding: 6px 10px;
+    background-color: #BC9667;
+    color: #f1f1f1;
+    border-radius: 5px;
 }
 .clients-title{
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
+}
+
+/*=====================================================*/
+/*Footer*/
+#logo{
+    max-width: 100%;
+    min-width: 50%;
+}
+#logo img{
+    width: 100px;
+}
+
+footer{
+    background-color: #313030;
+    color: #fff;
+}
+#footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    line-height: 1.8rem;
+    gap: 2rem;
+}
+.redes-socias a{
+    color: #fff;
+}
+
+.copy{
+    border-top: 1px solid var(--terc-color);
+    text-align: center;
+    padding: 5px;
+}
+.copy span{
+    
+    color: var(--primary-color);
+    font-weight: 50;
 }

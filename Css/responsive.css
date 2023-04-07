@@ -25,6 +25,7 @@
 }
 /*=================================MOBILE===================*/
 @media(max-width:415px){
+
     .main{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -35,14 +36,106 @@
     .main p{
         width: 300px;
     }
-   
+    .about-img{
+        width: 320px;
+    }
     .about-img img{
-        width: 350px;
+        width: inherit;
     }
     .about-text{
-        width: 350px;
+        width: 320px;
+        
     }
-    .about-text p{
-        width: 350px;
+    .overlay{
+        top:-.05px;
+    }
+    .client-comment{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: auto;
+    }
+}
+@media(max-width:375px){
+    .about-img{
+        width: 300px;
+    }
+    .about-img img{
+        width: inherit;
+    }
+    .about-text{
+        width: 300px;
+        
+    }
+    .overlay{
+        top:-1px;
+    }
+    .client-comment{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 299px;
+    }
+
+}
+@media(max-width:320px){
+  
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main h1{
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+    .main p{
+        width: 250px;
+    }
+    .main-img img{
+        width: 170px;
+    }
+    .main .btnShop{
+        padding: 5px;
+    }
+    .about-img{
+        width: 250px;
+    }
+    .about-img img{
+        width: inherit;
+    }
+    .about-text{
+        width: 250px;
+        
+    }
+    .overlay{
+        top:0px;
+        left: 100px;
+    }
+    .client-comment{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 250px;
+    }
+    .row-img{
+        width: 250px;
+    }
+
+
+    .card{
+        width: 250px;
+    }
+    .products-text h5{
+        top: -170px;
+        left: -30px;
+    }
+    .price{
+        font-size: .725rem;
+    }
+    .card img{
+        width: 100px;
+    }
+    #footer{
+        margin-top: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     }
 }
