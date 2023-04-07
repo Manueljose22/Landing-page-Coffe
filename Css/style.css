@@ -294,8 +294,13 @@ footer{
     line-height: 1.8rem;
     gap: 2rem;
 }
+#footer i{
+    font-size: 1.5rem;
+}
+
 .redes-socias a{
     color: #fff;
+    margin-left: 2rem;
 }
 
 .copy{
